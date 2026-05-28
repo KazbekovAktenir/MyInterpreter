@@ -8,16 +8,16 @@
     "net10.0": []
   },
   "packageFolders": {
-    "/var/folders/9p/l7c64n4d7xv077kgxmx0bpqw0000gn/T/cursor-sandbox-cache/b538fba621ca8ad3d7a1aa5e6b767ea0/nuget": {}
+    "/Users/aktenir/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/aktenir/C#Projects/MyInterpreter/MyInterpreter.csproj",
+      "projectUniqueName": "/Users/aktenir/Documents/C#/MyInterpreter/MyInterpreter/MyInterpreter.csproj",
       "projectName": "MyInterpreter",
-      "projectPath": "/Users/aktenir/C#Projects/MyInterpreter/MyInterpreter.csproj",
-      "packagesPath": "/var/folders/9p/l7c64n4d7xv077kgxmx0bpqw0000gn/T/cursor-sandbox-cache/b538fba621ca8ad3d7a1aa5e6b767ea0/nuget",
-      "outputPath": "/Users/aktenir/C#Projects/MyInterpreter/obj/",
+      "projectPath": "/Users/aktenir/Documents/C#/MyInterpreter/MyInterpreter/MyInterpreter.csproj",
+      "packagesPath": "/Users/aktenir/.nuget/packages/",
+      "outputPath": "/Users/aktenir/Documents/C#/MyInterpreter/MyInterpreter/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/aktenir/.nuget/NuGet/NuGet.Config"

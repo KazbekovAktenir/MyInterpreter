@@ -28,7 +28,7 @@ public class Lexer
         {
             char current = _source[_pos];
 
-            if (char.IsWhiteSpace(current))
+            if (char.IsWhiteSpace(current) || current == '\uFEFF')
             {
                 _pos++;
                 continue;
@@ -56,8 +56,17 @@ public class Lexer
             if (char.IsDigit(current))
             {
                 string num = "";
-                while (_pos < _source.Length && char.IsDigit(_source[_pos]))
+                bool hasDot = false;
+                while (_pos < _source.Length && (char.IsDigit(_source[_pos]) || _source[_pos] == '.'))
+                {
+                    if (_source[_pos] == '.')
+                    {
+                        if (hasDot)
+                            throw new InvalidOperationException($"Неверное число на позиции {_pos}.");
+                        hasDot = true;
+                    }
                     num += _source[_pos++];
+                }
                 tokens.Add(new Token(TokenType.Number, num));
                 continue;
             }

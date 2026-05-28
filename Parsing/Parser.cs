@@ -97,6 +97,10 @@ public class Parser
         {
             case TokenType.Number:
                 return Match(TokenType.Number).Value;
+            case TokenType.StringLiteral:
+                string temp = NewTemp();
+                Quads.Add(new Quadruple("SETSTR", Match(TokenType.StringLiteral).Value, "_", temp));
+                return temp;
             case TokenType.Identifier:
                 return Match(TokenType.Identifier).Value;
             case TokenType.LeftParen:
